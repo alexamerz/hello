@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/greet")
+@app.route("/greet", methods=["POST"])
 def greet():
     first_name = request.args.get("first_name", "world")
     return render_template("greet_html", first_name = first_name)
