@@ -5,10 +5,7 @@
 
 {% block body %}
  <form action="/greet" method="post">
-      <label class="form-label" for="nameInput">Введите имя</label>
-      <br>
-      <input type="text" name="name" autocomplete="off"
-      autofocus placeholder="Имя" id="nameInput">
+      <input type="text" name="name" placeholder="Enter name">
       <button type= "submit" class="btn btn-primary">Приветсвовать</button>
  </form>
 {% endblock %}
