@@ -5,7 +5,8 @@ Hello
 
 {% block body %}
  <form action="/greet" method="post">
-      <input type="text" name="name" placeholder="Enter name">
+      <input name="first_name" type="text" placeholder="Enter name"
+      autocomplete="off">
       <button type="submit">Push</button>
  </form>
 {% endblock %}
