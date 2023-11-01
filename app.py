@@ -10,4 +10,4 @@ def index():
 @app.route("/greet", methods=["POST"])
 def greet():
     first_name = request.form.get("first_name")
-    return render_template("greet_html", first_name = first_name)
+    return render_template("greet.html", first_name = first_name)
